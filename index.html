@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Best Survey Evah</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="container top">
+        <h1>Welcome to the best survey on the web</h1>
+        <h3>congrats u found it</h3>
+      </div>
+      <!-- Personal Info -->
+      <div class="container" id="personalinfo">
+        <form id="fullName">
+          <div class="form-group" id="hideOnClick">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text">
+            <button type="submit" class="btn">Save</button>
+          </div>
+          <button type="submit" class="btn" id="hidden">Edit</button>
+        </form>
+        <form id="birthday">
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input id="dob" class="form-control" type="date">
+          </div>
+          <button type="submit" class="btn">Save</button>
+        </form>
+      </div>
+
+      <div class="container row">
+
+        <!-- Favorite Foods - Text Input -->
+        <div class="col-sm-4">
+          <form id="food">
+            <div class="form-group">
+              <h4>Add your favorite foods!</h4>
+              <label for="favfood">Favorite Food(s)?</label>
+              <input id="favfood" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Add</button>
+          </form>
+          <ul id="foodlist">
+          </ul>
+        </div>
+
+        <!-- Favorite Music - Radio Buttons -->
+        <div class="col-sm-4">
+          <form id="music">
+            <div class="radio">
+              <label>
+                <input type="radio" name="music" value="genre1">
+                genre1
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="music" value="genre2">
+                genre2
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="music" value="genre3">
+                genre3
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="music" value="genre4">
+                genre4
+              </label>
+            </div>
+            <button type="submit" class="btn">Save</button>
+          </form>
+        </div>
+
+        <!-- Color Selection - Color Input -->
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="color1"> Color 1</label>
+            <input id="color1" class="form-control" type="color" value="#ff0000">
+            <label for="color2"> Color 2</label>
+            <input id="color2" class="form-control" type="color">
+          </div>
+          <button type="submit" class="btn">Save</button>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

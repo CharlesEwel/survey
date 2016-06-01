@@ -1,0 +1,12 @@
+.top{
+  text-align: center;
+}
+
+#personalinfo{
+  border-bottom: solid black 1px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#hidden{
+  display: none;
+}
