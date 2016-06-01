@@ -25,6 +25,11 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  $("button#clear").click(function() {
+    $("#foodlist ul li").remove();
+    event.preventDefault();
+  });
+
   $("form#music").submit(function() {
     var musicgenre = $("input:radio[name=music]:checked").val();
     $("#musicoutput h3").remove();
