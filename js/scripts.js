@@ -3,15 +3,17 @@ $(document).ready(function() {
     var name = $("input#name").val();
     $("div#hideOnClick").toggle();
     $("button#hidden").toggle();
-    $("#personalinfo h1").remove();
-    $("#personalinfo").prepend("<h1>"+name+"</h1>");
+    $("#infooutput h1").remove();
+    $("#infooutput").prepend("<h1>"+name+"</h1>");
     event.preventDefault();
   });
 
   $("form#birthday").submit(function() {
     var dob = $("input#dob").val();
-    $("#personalinfo h2").remove();
-    $("#personalinfo").append("<h2>"+dob+"</h2>");
+    $("div#hideOnClick2").toggle();
+    $("button#hidden2").toggle();
+    $("#infooutput h2").remove();
+    $("#infooutput").append("<h2>"+dob+"</h2>");
     event.preventDefault();
   });
 
@@ -35,4 +37,18 @@ $(document).ready(function() {
     $("#colortest p").css("color", color2);
     event.preventDefault();
   });
+
+  $("form#socmed").submit(function() {
+    var platform = $("#platform").val();
+    $("#socmed-output h3").remove();
+    $("#socmed-output").append("<h3>"+platform+"</h3>")
+    event.preventDefault();
+  });
+
+  // $("select").click(function(){
+  //   var platform = $ ("#platform").val();
+  //   $("#socmed-output h3").remove();
+  //   $("#socmed-output").append("<h3>"+platform+"</h3>")
+  //   event.preventDefault();
+  // });
 });

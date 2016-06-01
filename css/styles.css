@@ -1,3 +1,7 @@
+li{
+  word-wrap: break-word;
+}
+
 .top{
   text-align: center;
 }
@@ -8,5 +12,8 @@
   margin-bottom: 20px;
 }
 #hidden{
+  display: none;
+}
+#hidden2{
   display: none;
 }
