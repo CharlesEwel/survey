@@ -43,17 +43,10 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("form#socmed").submit(function() {
+ $("#socmed").change(function(){
     var platform = $("#platform").val();
     $("#socmed-output h3").remove();
     $("#socmed-output").append("<h3>"+platform+"</h3>")
     event.preventDefault();
   });
-
-  // $("select").click(function(){
-  //   var platform = $ ("#platform").val();
-  //   $("#socmed-output h3").remove();
-  //   $("#socmed-output").append("<h3>"+platform+"</h3>")
-  //   event.preventDefault();
-  // });
 });
