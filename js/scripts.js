@@ -11,6 +11,7 @@ $(document).ready(function() {
   $("form#birthday").submit(function() {
     var dob = $("input#dob").val();
     var dobstring = dob.toString();
+    console.log(dobstring);
     var americandob = dobstring.charAt(5)+dobstring.charAt(6)+"/"+dobstring.charAt(8)+dobstring.charAt(9)+"/"+dobstring.charAt(0)+dobstring.charAt(1)+dobstring.charAt(2)+dobstring.charAt(3);
     $("div#hideOnClick2").toggle();
     $("button#hidden2").toggle();
@@ -26,7 +27,7 @@ $(document).ready(function() {
   });
 
   $("button#clear").click(function() {
-    $("#foodlist ul li").remove();
+    $("ul#foodlist li").remove();
     event.preventDefault();
   });
 
