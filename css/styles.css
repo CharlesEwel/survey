@@ -17,3 +17,14 @@ li{
 #hidden2{
   display: none;
 }
+
+body{
+  background-color: #F5F5F5;
+  color: #000000;
+}
+
+button{
+  background-color: #808080;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

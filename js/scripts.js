@@ -10,10 +10,12 @@ $(document).ready(function() {
 
   $("form#birthday").submit(function() {
     var dob = $("input#dob").val();
+    var dobstring = dob.toString();
+    var americandob = dobstring.charAt(5)+dobstring.charAt(6)+"/"+dobstring.charAt(8)+dobstring.charAt(9)+"/"+dobstring.charAt(0)+dobstring.charAt(1)+dobstring.charAt(2)+dobstring.charAt(3);
     $("div#hideOnClick2").toggle();
     $("button#hidden2").toggle();
     $("#infooutput h2").remove();
-    $("#infooutput").append("<h2>"+dob+"</h2>");
+    $("#infooutput").append("<h2>Birthday: "+americandob+"</h2>");
     event.preventDefault();
   });
 
@@ -33,8 +35,11 @@ $(document).ready(function() {
   $("form#colorscheme").submit(function() {
     var color1 = $("#color1").val();
     var color2 = $("#color2").val();
-    $("#colortest").css("background-color", color1);
-    $("#colortest p").css("color", color2);
+    var color3 = $("#color3").val();
+    $("body").css("background-color", color1);
+    console.log( $("body").attr("background-color"));
+    $("body").css("color", color2);
+    $("button").css("background-color", color3);
     event.preventDefault();
   });
 
