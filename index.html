@@ -55,41 +55,48 @@
           <form id="music">
             <div class="radio">
               <label>
-                <input type="radio" name="music" value="genre1">
-                genre1
+                <input type="radio" name="music" value="rock">
+                rock
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="music" value="genre2">
-                genre2
+                <input type="radio" name="music" value="rap">
+                rap
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="music" value="genre3">
-                genre3
+                <input type="radio" name="music" value="country">
+                country
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="music" value="genre4">
-                genre4
+                <input type="radio" name="music" value="electronic">
+                electronic
               </label>
             </div>
             <button type="submit" class="btn">Save</button>
           </form>
+          <div id="musicoutput">
+          </div>
         </div>
 
         <!-- Color Selection - Color Input -->
         <div class="col-sm-4">
-          <div class="form-group">
-            <label for="color1"> Color 1</label>
-            <input id="color1" class="form-control" type="color" value="#ff0000">
-            <label for="color2"> Color 2</label>
-            <input id="color2" class="form-control" type="color">
+          <form id="colorscheme">
+            <div class="form-group">
+              <label for="color1"> Color 1</label>
+              <input id="color1" class="form-control" type="color" value="#ff0000">
+              <label for="color2"> Color 2</label>
+              <input id="color2" class="form-control" type="color">
+            </div>
+            <button type="submit" class="btn">Save</button>
+          </form>
+          <div id="colortest">
+            <p>Your favorite colors</p>
           </div>
-          <button type="submit" class="btn">Save</button>
         </div>
 
       </div>

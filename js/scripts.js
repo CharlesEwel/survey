@@ -20,4 +20,19 @@ $(document).ready(function() {
     $("#foodlist").append("<li>"+favfood+"</li>")
     event.preventDefault();
   });
+
+  $("form#music").submit(function() {
+    var musicgenre = $("input:radio[name=music]:checked").val();
+    $("#musicoutput h3").remove();
+    $("#musicoutput").append("<h3>"+musicgenre+"</h3>")
+    event.preventDefault();
+  });
+
+  $("form#colorscheme").submit(function() {
+    var color1 = $("#color1").val();
+    var color2 = $("#color2").val();
+    $("#colortest").css("background-color", color1);
+    $("#colortest p").css("color", color2);
+    event.preventDefault();
+  });
 });
